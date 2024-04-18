@@ -1,0 +1,62 @@
+.Featured-collection{
+    background-color: #f8f5f5;
+    }
+    .Products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-around;
+    }
+    
+    
+    .row {
+        width: 250px;
+        margin: 0 4px;
+        transition: all .40s;
+    }
+    .row img{
+        display: flex;
+        justify-content: space-around;
+    }
+    .Products {
+        width: 250px;
+        padding: 0 4px;
+        transition: all .40s;
+    }
+    .Products img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        transition: all .40s;
+    }
+    .Products img:hover {
+        transform: scale(0.9);
+    }
+    .Products-info {
+        text-align: center; /* Center the text below the image */
+    }
+    .product-text:hover{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    }
+    .product-text h5{
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        background-color: green;
+        padding: 3px 20px;
+        border-radius: 2px;
+    }
+    .heart-icon{
+        position: absolute;
+        right: 0;
+        font-size: 20px;
+    
+    }
+    .heart-icon:hover{
+        color: red;
+    }

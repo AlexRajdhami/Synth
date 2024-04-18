@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+.nav-bar{
+    display: flex;
+    background-color: #aaa8a8;
+}
+.nav-bar a{
+  
+        color: #141515;
+        z-index: 1001; /* Increased z-index */
+        font-size: 16px;
+        text-transform: capitalize;
+        padding: 10px 20px;
+        transition: all .42s ease;
+        font-weight: 400;
+        position: relative; /* Added position relative */
+}
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 0.3rem;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+    padding: 0.3rem;
+    background: #779876;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-button i {
+    color: #fff;
+}
+
+/* Adjustments for other icons */
+.nav-icon a {
+    margin: 0 10px;
+    color: #2c2c2c;
+    font-size: 25px;
+    transition: all .3s ease;
+}
+.nav-icon a:hover {
+    color: #04c2c9;
+    transform: scale(1.1);
+}
+
+/* Menu styles */
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+    margin-left: -20px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 27px;
+    font-size: 14px;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.nav-bar a {
+    color: #141515;
+    z-index: 1001; /* Increased z-index */
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition: all .42s ease;
+    font-weight: 400;
+    position: relative; /* Added position relative */
+}
+
+ul li a:hover {
+    color: aquamarine;
+    transform: scale(1.05);
+    z-index: 1002; /* Increased z-index for hover effect */
+}
+.nav-icon {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 10px;
+    }
+    .nav-icon i {
+        margin-right: 30px;
+        color: #2c2c2c;
+        font-size: 25px;
+        font-weight: 400;
+        transition: all .42s ease;
+      
+    }
+    .nav-icon i:hover{
+        transform: scale(1.1);
+        color: red;
+    }
+Section{
+    padding: 5% 10%;
+}
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(christian-lunde-DuJA-IlY-P0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)                   
+   
+
+}
+.main-text h1 {
+    color: #fff; /* Changed to white for better contrast */
+    font-size: 48px; /* Increased font size for impact */
+    text-transform: uppercase; /* Changed to uppercase for a bolder look */
+    font-weight: 700; /* Increased weight for emphasis */
+    margin-bottom: 0.5rem; /* Added bottom margin for spacing */
+}
+
+.main-text h2 {
+    color: #04c2c9; /* Changed to a bright, brand-specific color */
+    font-size: 36px; /* Reduced font size for hierarchy */
+    text-transform: uppercase; /* Consistency in transformation */
+    line-height: 1.2; /* Adjusted line height for readability */
+    font-weight: 700; /* Consistent weight with h1 */
+    margin: 0.5rem 0; /* Adjusted margin for spacing */
+}
+.main-text p {
+    color: #fff; /* Changed to white for readability */
+    font-size: 18px; /* Increased font size for visibility */
+    font-weight: 400; /* Normal weight for body text */
+    margin-bottom: 1rem; /* Added bottom margin for spacing */
+}
+.main-btn{
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 2px solid #141515;
+    padding: 10px 25px;
+    transition: all .42s ease;
+    background-color: #141515;
+}
+.main-btn:hover{
+  color: aquamarine;
+}
+.main-btn i{
+    vertical-align: middle;
+    color: floralwhite;
+}
+.header.sticky{
+    background: #fff;
+    padding: 20px 10%;
+     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+.centre-text h2{
+color: #141515;
+font-size: 28px;
+text-transform: capitalize;
+text-align: center;
+margin-bottom: 30px;
+}
+
+.client-review {
+    background-color: gray;
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.review-title {
+    color: #141515;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.review-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+.review-description p {
+    color: #141515;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+
+.review-author {
+    font-size: 22px;
+    color: #141515;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.review-role {
+    font-size: 16px;
+    color: #141515;
+    font-weight: 400;
+}
+
+.Rating{
+    color: orange;
+    font-size: 18px;
+
+}
+.price h4{
+ color: #141515;
+ font-size: 18px;
+ text-transform: capitalize;
+ font-weight: 400;
+
+}
+.price p{
+    color: #141515;
+    font-size: 14px;
+    font-weight: 600;
+}
+.upper-text h2{
+    text-align: center;
+    color: #141515;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+     margin-bottom: 30px;
+
+
+}
+.cart img{
+    border-radius: 5px;
+}
+.Updated-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px,auto));
+    gap: 1rem;
+}
+.cart h5{
+    color: rgb(117, 120, 120);
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+.cart h4{
+    color: #141515;
+    font-size: 18px;
+    font-weight: 600;
+     
+
+}
+.cart p{
+    color: #141515;
+    font-size: 15px;
+    max-width: 380px;
+    line-height: 25px;
+    margin-bottom: 12px;
+
+}
+.cart h6{
+    color: #141515;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+/* Main Content */
+.about-section {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.about-section .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+/*contact section*/
+.contact{
+    background-color: #525151;
+
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+    gap: 3rem;
+}
+.first-info h2{
+    display: flex;
+    font-size: 30px;
+}
+.contact-info h4{
+    color: #141515;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+.contact-info p{
+    color: rgb(4, 5, 4);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+.contact-info p:hover{  color: red;
+}
+.Social-icons{
+    color: blue;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+.Social-icons:hover{
+    transition: scale(1.3);
+}
+.end-text{
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.end-text p{
+    color: #141515;
+    text-transform: capitalize;
+}

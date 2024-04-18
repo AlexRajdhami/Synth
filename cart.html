@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="shopping-cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="IMG-1ef2e735b1ee04870071a0413022f027-V.jpg" alt="Product Name" class="cart-item-image">
+                <div class="item-details">
+                    <h4 class="item-name">Product Name</h4>
+                    <p class="item-price">£30.33</p>
+                    <div class="item-quantity">
+                        <button class="quantity-decrease">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-increase">+</button>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+            <!-- Repeat for each item in the cart -->
+        </div>
+        <div class="cart-summary">
+            <p>Total: <span class="cart-total-price">£0.00</span></p>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* Featured Collection Styles */
+.featured-collection {
+    padding: 4rem 0;
+    background-color: #f4f4f4;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: calc(33.333% - 2rem);
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.product-item img:hover{
+    transform: scale(0.9);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product-info {
+    padding: 0.5rem 0;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.product-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.product-link:hover {
+    background-color: #04c2c9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%;
+    }
+}
+.product-item {
+    position: relative;
+    /* ... other styles ... */
+}
+
+.product-rating {
+    color: #ffd700; /* Gold color for stars */
+    margin-bottom: 0.5rem;
+}
+
+.product-rating .bx {
+    font-size: 1rem;
+}
+
+.product-favorite {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #333; /* Default color for heart */
+    cursor: pointer;
+}
+
+.product-favorite .bx-heart {
+    transition: color 0.3s ease;
+}
+
+.product-favorite .bx-heart:hover {
+    color: #e74c3c; /* Red color on hover */
+}
+
+.header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+.nav-bar{
+    display: flex;
+    background-color: #aaa8a8;
+}
+.nav-bar a{
+  
+        color: #141515;
+        z-index: 1001; /* Increased z-index */
+        font-size: 16px;
+        text-transform: capitalize;
+        padding: 10px 20px;
+        transition: all .42s ease;
+        font-weight: 400;
+        position: relative; /* Added position relative */
+}
+
+/* Menu styles */
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+    margin-left: -20px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 27px;
+    font-size: 14px;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.nav-bar a {
+    color: #141515;
+    z-index: 1001; /* Increased z-index */
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition: all .42s ease;
+    font-weight: 400;
+    position: relative; /* Added position relative */
+}
+
+ul li a:hover {
+    color: aquamarine;
+    transform: scale(1.05);
+    z-index: 1002; /* Increased z-index for hover effect */
+}
+.nav-icon {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 10px;
+    }
+    .nav-icon i {
+        margin-right: 30px;
+        color: #2c2c2c;
+        font-size: 25px;
+        font-weight: 400;
+        transition: all .42s ease;
+      
+    }
+    .nav-icon i:hover{
+        transform: scale(1.1);
+        color: red;
+    }

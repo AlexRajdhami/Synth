@@ -1,0 +1,40 @@
+.search {
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 150px;
+    height: 37px;
+    background: transparent;
+    border: 1px solid #009688;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #009688;
+    border: 2px solid #009688;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}

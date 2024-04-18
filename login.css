@@ -1,0 +1,92 @@
+.form {
+    width: 270px;
+    height: 330px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+    position: absolute;
+    top: 5px;
+    left: 500px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+    width: 100;
+    font-family: sans-serif;
+    text-align: center;
+    color: #009688;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #009688;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    font-family: sans-serif;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn {
+    width: 220px;
+    height: 40px;
+    background: #009688;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: floralwhite;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    color: #fff;
+    background: forestgreen;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form.link {
+    font-family: sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form.link a {
+    text-decoration: underline;
+    color: #009688;
+}
+.form p{
+    color: #fff;
+}
+.form a{
+    color: #fff;
+}
+.form a:hover{
+    color:red;
+}
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center
+}
