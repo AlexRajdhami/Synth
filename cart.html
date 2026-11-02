@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="cart.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your bag – Synth</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/cart-page.js"></script>
 </head>
 <body>
-    <div class="shopping-cart">
-        <h2>Your Cart</h2>
-        <div class="cart-items">
-            <div class="cart-item">
-                <img src="IMG-1ef2e735b1ee04870071a0413022f027-V.jpg" alt="Product Name" class="cart-item-image">
-                <div class="item-details">
-                    <h4 class="item-name">Product Name</h4>
-                    <p class="item-price">£30.33</p>
-                    <div class="item-quantity">
-                        <button class="quantity-decrease">-</button>
-                        <input type="number" value="1" class="quantity-input">
-                        <button class="quantity-increase">+</button>
-                    </div>
-                    <button class="remove-item">Remove</button>
-                </div>
-            </div>
-            <!-- Repeat for each item in the cart -->
-        </div>
-        <div class="cart-summary">
-            <p>Total: <span class="cart-total-price">£0.00</span></p>
-            <button class="checkout-btn">Checkout</button>
-        </div>
-    </div>
-    
+  <div data-header></div>
+
+  <main id="main" class="container section" style="padding-top:40px">
+    <h1>Your bag</h1>
+    <div data-cart></div>
+  </main>
+
+  <div data-footer></div>
 </body>
 </html>

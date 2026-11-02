@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout – Synth</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/checkout.js"></script>
+</head>
+<body>
+  <div data-header></div>
+
+  <main id="main" class="container section" style="padding-top:40px">
+    <div data-checkout>
+      <h1>Checkout</h1>
+      <p class="notice"><strong>Demo store:</strong> this is a portfolio project. No payment details are collected and no real order is placed.</p>
+
+      <div class="layout-2">
+        <form id="checkout-form" novalidate>
+          <fieldset>
+            <legend>Contact</legend>
+            <div class="form-grid">
+              <div class="field full"><label for="email">Email</label>
+                <input id="email" name="email" class="input" type="email" autocomplete="email" required>
+                <p class="error-text" id="email-error"></p></div>
+              <div class="field full"><label for="phone">Phone (optional)</label>
+                <input id="phone" name="phone" class="input" type="tel" autocomplete="tel">
+                <p class="error-text" id="phone-error"></p></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery address</legend>
+            <div class="form-grid">
+              <div class="field"><label for="firstName">First name</label>
+                <input id="firstName" name="firstName" class="input" autocomplete="given-name" required>
+                <p class="error-text" id="firstName-error"></p></div>
+              <div class="field"><label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" class="input" autocomplete="family-name" required>
+                <p class="error-text" id="lastName-error"></p></div>
+              <div class="field full"><label for="address">Address</label>
+                <input id="address" name="address" class="input" autocomplete="address-line1" required>
+                <p class="error-text" id="address-error"></p></div>
+              <div class="field"><label for="city">Town / city</label>
+                <input id="city" name="city" class="input" autocomplete="address-level2" required>
+                <p class="error-text" id="city-error"></p></div>
+              <div class="field"><label for="postcode">Postcode</label>
+                <input id="postcode" name="postcode" class="input" autocomplete="postal-code" required>
+                <p class="error-text" id="postcode-error"></p></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery method</legend>
+            <label class="radio-card"><span><input type="radio" name="delivery" value="standard" checked> Standard · 2–4 working days</span><span data-standard-price></span></label>
+            <label class="radio-card"><span><input type="radio" name="delivery" value="express"> Express · next working day</span><span>+ £5.00</span></label>
+          </fieldset>
+
+          <button class="btn btn--block" type="submit">Place demo order</button>
+        </form>
+
+        <aside class="summary" aria-label="Order summary">
+          <h2 style="font-size:1.2rem">Order summary</h2>
+          <div data-lines></div>
+          <div data-summary></div>
+          <p style="margin:16px 0 0"><a class="link" href="cart.html">Edit bag</a></p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

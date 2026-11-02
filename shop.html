@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop all – Synth</title>
+  <meta name="description" content="Browse the full Synth collection: tops, shirts, outerwear, denim, dresses and footwear.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/shop.js"></script>
+</head>
+<body>
+  <div data-header></div>
+
+  <main id="main" class="container section" style="padding-top:40px">
+    <p class="eyebrow">Collection</p>
+    <h1 data-title>Shop all</h1>
+    <p class="muted" data-count aria-live="polite"></p>
+
+    <div class="toolbar">
+      <div class="chips" role="group" aria-label="Filter by category" data-chips></div>
+      <div class="controls">
+        <label class="field-inline" for="search"><span class="visually-hidden">Search products</span>
+          <input id="search" class="input" type="search" placeholder="Search products…" autocomplete="off">
+        </label>
+        <label class="field-inline" for="sort">Sort
+          <select id="sort" class="input">
+            <option value="featured">Featured</option>
+            <option value="new">Newest</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="grid" data-results></div>
+    <div class="empty" data-empty hidden>
+      <p>No products match your search.</p>
+      <button class="btn btn--ghost" type="button" data-reset>Clear filters</button>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

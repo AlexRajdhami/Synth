@@ -1,0 +1,13 @@
+{
+  "name": "synth-store",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Synth – minimal clothing store demo (HTML, CSS, vanilla JavaScript)",
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\"",
+    "start": "npx serve ."
+  },
+  "author": "Alex Rajdhami",
+  "license": "MIT"
+}

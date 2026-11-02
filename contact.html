@@ -1,32 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Synth</title>
+  <meta name="description" content="Get in touch with the Synth team.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/contact.js"></script>
 </head>
 <body>
-    <section class="contact-form-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="submit_form.php" method="post" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-    
+  <div data-header></div>
+
+  <main id="main" class="container section" style="padding-top:40px">
+    <div class="split" style="align-items:start">
+      <div>
+        <p class="eyebrow">Customer care</p>
+        <h1>Contact us</h1>
+        <p class="muted">Questions about sizing, an order or our materials? Send us a message and we'll reply within one working day.</p>
+        <p class="muted">Monday to Friday, 9am – 5pm</p>
+      </div>
+
+      <div data-contact>
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="name">Name</label>
+              <input id="name" name="name" class="input" autocomplete="name" required>
+              <p class="error-text" id="name-error"></p></div>
+            <div class="field"><label for="email">Email</label>
+              <input id="email" name="email" class="input" type="email" autocomplete="email" required>
+              <p class="error-text" id="email-error"></p></div>
+            <div class="field full"><label for="topic">Topic</label>
+              <select id="topic" name="topic" class="input">
+                <option>Sizing</option><option>An order</option><option>Returns</option><option>Something else</option>
+              </select></div>
+            <div class="field full"><label for="message">Message</label>
+              <textarea id="message" name="message" class="input" rows="6" required></textarea>
+              <p class="error-text" id="message-error"></p></div>
+          </div>
+          <button class="btn" type="submit" style="margin-top:8px">Send message</button>
+          <p class="muted" style="font-size:.8rem;margin-top:12px">Demo form – messages are not sent anywhere.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
 </body>
 </html>
